@@ -1,0 +1,176 @@
+/* static/style.css */
+:root {
+    --primary-color: #5E5DF0;
+    --secondary-color: #20242b;
+    --background-color: #f0f2f5;
+    --surface-color: #ffffff;
+    --text-color: #333;
+    --text-muted-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), #4e4edc);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.sidebar-sticky {
+    background-color: var(--surface-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.main-content {
+    background-color: var(--surface-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.form-check.form-switch {
+    padding: .75rem 1.25rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-check.form-switch:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.form-check-input {
+    width: 2.5em;
+    height: 1.4em;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid #e9ecef;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.result-card .card-header {
+    background-color: #f8f9fa;
+}
+
+.token-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 0;
+}
+
+.token {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.9em;
+    font-weight: 500;
+    animation: fadeIn 0.4s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.btn {
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 15px -5px var(--primary-color);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px -5px var(--primary-color);
+}
+
+#inputText {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#inputText:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(94, 93, 240, 0.25);
+}
+
+.spinner-border {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-width: .3em;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    color: var(--primary-color);
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+}
+
+.table-hover > tbody > tr:hover > * {
+  --bs-table-accent-bg: rgba(94, 93, 240, 0.08);
+}
+
+.copy-btn {
+    font-size: 0.8em;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.copy-btn .fa-check {
+    color: var(--success-color);
+}
+
+/* File Drop Zone */
+.file-drop-zone {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-muted-color);
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.file-drop-zone.dragover {
+    border-color: var(--primary-color);
+    background-color: rgba(94, 93, 240, 0.05);
+    color: var(--primary-color);
+}
