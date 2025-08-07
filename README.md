@@ -33,4 +33,3 @@ A comprehensive text preprocessing pipeline with a beautiful web interface for N
 ```bash
 git clone <repository-url>
 cd text-preprocessing-pipeline
-<img width="942" height="436" alt="Screenshot 2025-08-08 020000" src="https://github.com/user-attachments/assets/edd98b0b-6998-4a7b-8c54-104a88fb621a" />
